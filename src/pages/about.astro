@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/global.css';
+
+const pageTitle = "About Me";
+
+const identity = {
+  firstName: "Nava",
+  country: "Australia",
+  occupation: "Gamer",
+  hobbies: ["crochet", "drawing", "gaming"],
+};
+
+const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
+
+const happy = true;
+const finished = false;
+const goal = 1;
+---
+<BaseLayout pageTitle={pageTitle}>
+    <h2>You stalking me?!</h2>
+    <p>I will put actual things for my about me on the personal website, trust</p>
+
+    <p>Might shove education, volunteering and my scholarship in this page</p>
+
+    <p>color: rgb(22, 32, 108)</p>
+
+    <p>Here are a few facts about me:</p>
+    <ul>
+    <li>My name is {identity.firstName}.</li>
+    <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
+    {identity.hobbies.length >= 2 &&
+        <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
+    }
+    </ul>
+    <p>My skills are:</p>
+    <ul>
+    {skills.map((skill) => <li class="skill">{skill}</li>)}
+    </ul>
+
+    {happy && <p>I am happy to be learning Astro!</p>}
+    {finished && <p>I finished this tutorial!</p>}
+    {goal === 1 ? <p>My goal is to finish in 1 day.</p> : <p>My goal is not 1 day.</p>}
+    
+</BaseLayout>
