@@ -2,6 +2,8 @@
 
 Following the Astro docs to create a blog
 
+Deployed on Netlify here: https://nava-astro-blog.netlify.app/
+
 ## 🚀 Project Structure
 
 ```text

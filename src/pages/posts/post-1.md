@@ -2,6 +2,9 @@
 
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'First Blog Post'
+image:
+    url: "https://docs.astro.build/assets/arc.webp"
+    alt: "The Astro logo on a dark background with a purple gradient arc."
 pubDate: 2026.02.05
 author: 'Nava Choudhury'
 tags: ["astro", "blogging", "learning in public"]
