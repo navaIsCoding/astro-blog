@@ -1,11 +1,29 @@
 ---
 import Greeting from '../components/Greeting';
 import BaseLayout from '../layouts/BaseLayout.astro';
-const pageTitle = "Home Page";
+const pageTitle = "Hi! I'm Nava :]";
 ---
 <BaseLayout pageTitle={pageTitle}>
-	<h2>Welcome!</h2>
-	<p>Here you will find experimentation and possibly bagels</p>
-	<Greeting client:load messages={["Hi", "Hello", "Howdy", "Hey there"]} />
-	<a href="/tags/">Search with tags</a>
+	<div class="column">
+		<img
+			class="img_right"
+			alt="Nava Choudhury portrait"
+			width=40%
+			src="../../public/portrait.jpg"
+		/>
+		<p>A computer science student at UNSW. Based in Sydney, busy day-to-day with study for the final year of my Bachelors and teaching first year students at Macquarie University.</p>
+		<p>Mainly a fan of frontend using tools like React, Typescript, JS, Tailwind CSS and Figma for designing.</p>
+		<p>Currently I'm looking through courses ranging from learning Python Flask to Blind 75 to The Odin Project. Aiming to be well-rounded and capable software engineer.</p>
+
+
+	<!-- <Greeting client:load messages={["Hi", "Hello", "Howdy", "Hey there"]} />
+	<a href="/tags/">Search with tags</a> -->
 </BaseLayout>
+
+<style>
+	img {
+		float: right;
+		clip-path: ellipse(50% 50%);
+		shape-outside: ellipse(60% 60%);
+	}
+</style>

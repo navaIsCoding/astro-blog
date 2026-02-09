@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "Resume";
+---
+<BaseLayout pageTitle={pageTitle}>
+    <div class="button-container">
+      <a href="../../public/Nava_Choudhury_Resume_Web.pdf" download="Nava_Choudhury_Resume_Web.pdf">
+          <button>
+            Download File
+          </button>
+      </a>
+    </div>
+
+    <object class="resume"
+      data="../../public/Nava_Choudhury_Resume_Web.pdf"
+      type="application/pdf"
+      width="100%"
+      height="100%"
+    >
+      <p>
+        Your browser does not support PDFs. [Download the
+        PDF](https://github.com/navaIsCoding/astro-blog/tree/main/public).
+      </p>
+    </object>
+    
+    
+</BaseLayout>
+
+<style>
+    .resume {
+        height:100vh;
+    }
+    button {
+        padding: 0.5rem 1rem;
+        color: white;
+        background-color: #555b8c;
+        text-decoration: none;
+        border: none;
+        margin: 16px 24px;
+        font-family: 'Volta', sans-serif;
+    }
+</style>

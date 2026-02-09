@@ -20,6 +20,11 @@ body {
   box-sizing: border-box;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 h1 {
   margin: 1rem 0;
   font-size: 2.5rem;
@@ -28,7 +33,7 @@ h1 {
 /* dark mode styles */
 
 html.dark {
-  background-color: #0d0950;
+  background-color: #0b091e;
   color: #fff;
 }
 
@@ -47,7 +52,7 @@ html.dark {
 }
 
 .dark a {
-  color: #ff9776;
+  color: #76ffff;
 }
 
 /* nav styles */
@@ -81,7 +86,7 @@ html.dark {
 
 .nav-links a:hover,
 .nav-links a:focus {
-  background-color: #ff9776;
+  background-color: #a4dfe6;
 }
 
 :has(.menu[aria-expanded="true"]) .nav-links {
