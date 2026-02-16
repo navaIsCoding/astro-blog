@@ -1,20 +1,159 @@
 ---
+import unsw from '../../public/unsw-logo.png';
+import mq from '../../public/mq-logo.png';
+import ph from '../../public/placeholder.png';
+import { Separator } from '@/components/ui/separator';
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+
+import { Image } from "@/components/ui/image"
+import {
+  Tile,
+  TileActions,
+  TileContent,
+  TileDescription,
+  TileMedia,
+  TileSplit,
+  TileTitle,
+} from "@/components/ui/tile"
+
 const pageTitle = "About Me";
 
 const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
 
 ---
 <BaseLayout pageTitle={pageTitle}>
+    <Separator />
+    <h2>Experience</h2>
+    <Tile href="https://www.unsw.edu.au/">
+        <TileSplit class="items-center">
+            <TileMedia>
+            <Image src={ph} alt="Sample" class="rounded-md"  />
+            </TileMedia>
+            <TileContent>
+            <TileTitle>Teaching Assistant</TileTitle>
+            <TileDescription>
+                <i>Macquarie University</i>
+                <i>Feb 2025 – Present</i>
+                <p>• Taught practical workshops to second-year students each week on topics related to networking technology and
+software development to first-year students
+• Provided consultation and personalized feedback to students
+• Troubleshooted codebase issues, networking applications, virtual machines and IDEs</p>
+            </TileDescription>
+            </TileContent>
+        </TileSplit>
+    </Tile>
+
+    <Tile href="https://www.unsw.edu.au/">
+        <TileSplit class="items-center">
+            <TileMedia>
+            <Image src={ph} alt="Sample" class="rounded-md"  />
+            </TileMedia>
+            <TileContent>
+            <TileTitle>Computing Drop-In Centre Staff</TileTitle>
+            <TileDescription>
+                <i>Macquarie University</i>
+                <i>Feb 2025 – Jun 2025</i>
+                <p>• Taught computing students each week in walk-in sessions, which improved their understanding and grades
+• Supported students with low motivation by discussing study plans, and this helped them focus on important tasks
+• Fostered an encouraging environment, which helped students remain calm while working on their learning</p>
+            </TileDescription>
+            </TileContent>
+        </TileSplit>
+    </Tile>
+
+    <Separator />
     <h2>Education</h2>
+
+    <Tile href="https://www.unsw.edu.au/">
+        <TileSplit class="items-center">
+            <TileMedia>
+            <Image src={unsw} alt="Sample" class="rounded-md"  />
+            </TileMedia>
+            <TileContent>
+            <TileTitle>UNSW</TileTitle>
+            <TileDescription>
+                <i>Bachelor of Computer Science</i>
+                <i>Feb 2025 – Ongoing</i>
+                <p>• Transferred universities to align with evolving community and career interests</p>
+                <p>• Assumed leadership roles in group projects, which ensured high quality submissions</p>
+            </TileDescription>
+            </TileContent>
+        </TileSplit>
+    </Tile>
+
+    <Tile href="https://www.unsw.edu.au/">
+        <TileSplit class="items-center">
+            <TileMedia>
+            <Image src={ph} alt="Sample" class="rounded-md"  />
+            </TileMedia>
+            <TileContent>
+            <TileTitle>California State University East Bay</TileTitle>
+            <TileDescription>
+                <i>Semester Exchange </i>
+                <i>Aug 2024 – Dec 2024</i>
+                <p>• Completed the subjects CS101 (A), CS221 (A-), CS311 (A) and ENGR200 (A) during the semester</p>
+                <p>• Expanded knowledge on computers, programming and engineering in a new community with limited time</p>
+            </TileDescription>
+            </TileContent>
+        </TileSplit>
+    </Tile>
+
+    <Tile href="https://www.unsw.edu.au/">
+        <TileSplit class="items-center">
+            <TileMedia>
+            <Image src={mq} alt="Sample" class="rounded-md"  />
+            </TileMedia>
+            <TileContent>
+            <TileTitle>Macquarie University </TileTitle>
+            <TileDescription>
+                <i>Bachelor of Software Engineering</i>
+                <i>Feb 2023 – July 2024</i>
+                <p>• Earned a Women in STEM Scholarship from volunteering and academics</p>
+            </TileDescription>
+            </TileContent>
+        </TileSplit>
+    </Tile>
+
+    <Separator />
     <h2>Scholarship</h2>
+      <Tile href="#" variant="floating">
+    <TileContent>
+      <TileTitle>Women in STEM Scholarship</TileTitle>
+      <TileDescription>Issued by Faculty of Science and Engineering at Macquarie University, earnt due to academic effort</TileDescription>
+    </TileContent>
+  </Tile>
+
+    
+    <Separator />
     <h2>Volunteering</h2>
+    <Tile href="#" variant="floating">
+        <TileContent>
+        <TileTitle>Cat Shelter Volunteer</TileTitle>
+        <TileDescription>Soon</TileDescription>
+        </TileContent>
+    </Tile>
 
+    <Tile href="#" variant="floating">
+        <TileContent>
+        <TileTitle>Devsoc Trainee</TileTitle>
+        <TileDescription>Soon</TileDescription>
+        </TileContent>
+    </Tile>
 
-    <p>Here are a few facts about me:</p>
+    <Tile href="#" variant="floating">
+        <TileContent>
+        <TileTitle>Social Media Manager</TileTitle>
+        <TileDescription>Soon</TileDescription>
+        </TileContent>
+    </Tile>
+
+    <Separator />
+
+    <!-- <p>Here are a few facts about me:</p>
     <p>My skills are:</p>
     <ul>
     {skills.map((skill) => <li class="skill">{skill}</li>)}
-    </ul>
+    </ul> -->
 
 </BaseLayout>

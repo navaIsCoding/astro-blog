@@ -1,7 +1,39 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import ph from '../../public/placeholder.png';
 const pageTitle = "Computer Science Projects";
+
+import { Image } from "@/components/ui/image"
+import {
+  Tile,
+  TileActions,
+  TileContent,
+  TileDescription,
+  TileMedia,
+  TileSplit,
+  TileTitle,
+} from "@/components/ui/tile"
 ---
 <BaseLayout pageTitle={pageTitle}>
     <p>Need images and small descriptions of the projects I've done, then maybe a page for each project just like the blogs</p>
+
+    <Tile href="https://github.com/devsoc-unsw/trainee-kung-fu-panda-25t3">
+        <TileSplit class="items-center">
+            <TileMedia>
+            <Image src={ph} alt="Sample" class="rounded-md"  />
+            </TileMedia>
+            <TileContent>
+            <TileTitle>Not-Osu! (Online Rhythm Game)</TileTitle>
+            <TileDescription>
+                <i>React, Typescript, Tailwind CSS, MongoDB, Three.js</i>
+                <i>Feb 2025 – Ongoing</i>
+                <p>• Developed the song selection screen for a full stack web app as a part of the Devsoc Trainee Program
+• Communicated with team members in meetings for feedback and suggestions
+• Designed the look of the start and song selection screens in the game using Figma</p>
+            </TileDescription>
+            </TileContent>
+        </TileSplit>
+    </Tile>
+
+
 </BaseLayout>
