@@ -1,6 +1,7 @@
 ---
+import osu from '../../public/osu-ss.png';
+import tuft from '../../public/tuft-ss.png';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import ph from '../../public/placeholder.png';
 const pageTitle = "Computer Science Projects";
 
 import { Image } from "@/components/ui/image"
@@ -15,25 +16,41 @@ import {
 } from "@/components/ui/tile"
 ---
 <BaseLayout pageTitle={pageTitle}>
-    <p>Need images and small descriptions of the projects I've done, then maybe a page for each project just like the blogs</p>
-
     <Tile href="https://github.com/devsoc-unsw/trainee-kung-fu-panda-25t3">
         <TileSplit class="items-center">
             <TileMedia>
-            <Image src={ph} alt="Sample" class="rounded-md"  />
+            <Image src={osu} alt="Sample" class="rounded-md"  />
             </TileMedia>
             <TileContent>
             <TileTitle>Not-Osu! (Online Rhythm Game)</TileTitle>
             <TileDescription>
-                <i>React, Typescript, Tailwind CSS, MongoDB, Three.js</i>
-                <i>Feb 2025 – Ongoing</i>
-                <p>• Developed the song selection screen for a full stack web app as a part of the Devsoc Trainee Program
-• Communicated with team members in meetings for feedback and suggestions
-• Designed the look of the start and song selection screens in the game using Figma</p>
+                <i>React, Typescript, Tailwind CSS, MongoDB, Three.js | Oct 2025 – Dec 2025</i>
+                <ul style="list-style-type:square;">
+                    <li>Developed the song selection screen for a full stack web app as a part of the Devsoc Trainee Program</li>
+                    <li>Communicated with team members in meetings for feedback and suggestions</li>
+                    <li>Designed the look of the start and song selection screens in the game using Figma</li>
+                </ul>
             </TileDescription>
             </TileContent>
         </TileSplit>
     </Tile>
 
+    <Tile href="https://github.com/navaIsCoding/TUFT-ForgeHACK2025/">
+        <TileSplit class="items-center">
+            <TileMedia>
+            <Image src={tuft} alt="Sample" class="rounded-md"  />
+            </TileMedia>
+            <TileContent>
+            <TileTitle>TUFT (ForgeHack 2025 Project)</TileTitle>
+            <TileDescription>
+                <i>Atlassian Confluence, Atlassian Rovo Agents | Feb 2025 – Feb 2025</i>
+                <ul style="list-style-type:square;">
+                    <li>Created an AI for recognising similar documentation in Confluence, which helped devs spend more time on coding</li>
+                    <li>Won multiple prizes by involving our team of 5 in tests, which increased all of our knowledge on AI</li>
+                </ul>
+            </TileDescription>
+            </TileContent>
+        </TileSplit>
+    </Tile>
 
 </BaseLayout>

@@ -1,10 +1,10 @@
 # Astro Blog
 
-Following the Astro docs to create a blog
+Personal Portifolio Website for Nava Choudhury
 
-Deployed on Netlify here: https://nava-astro-blog.netlify.app/
+Deployed here using Cloudflare: https://navac.dev
 
-Resume here: https://nava-astro-blog.netlify.app/resume/
+Resume here: https://navac.dev/resume
 
 ## 🚀 Project Structure
 
@@ -15,11 +15,7 @@ Resume here: https://nava-astro-blog.netlify.app/resume/
 │   └── components/
 │   └── layouts/
 │       └── BaseLayout.astro
-│       └── MarkdownPostLayout.astro
 │   └── pages/
-│       └── index.astro
-│       └── posts/
-│           └── post.md
 │   └── scripts/
 │   └── styles/
 └── package.json

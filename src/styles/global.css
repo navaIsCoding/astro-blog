@@ -9,6 +9,11 @@
     src: url(Volta.ttf);
 }
 
+p {
+  margin-bottom: 1rem;
+}
+
+
 html {
   background-color: #bad3ed;
   font-family: 'Volta', sans-serif;
@@ -58,7 +63,7 @@ html.dark {
 }
 
 .dark a {
-  color: #76ffff;
+  color: #9adbdb;
 }
 
 /* nav styles */
